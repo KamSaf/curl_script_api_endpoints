@@ -15,13 +15,13 @@ echo
 ### POST ###
 
 # create goal in database
-curl -X POST http://127.0.0.1:8000/goals/ -d '{"id":"10","item":"do something"}' 
+curl -X POST http://127.0.0.1:8000/goals/ -d '{"item": "do something"}' 
 
 
 ### PUT ###
 
 # updates chosen goal in database
-curl -X PUT http://127.0.0.1:8000/goals/10/ -d '{"id":"10","item":"do something else"}'
+curl -X PUT http://127.0.0.1:8000/goals/10/ -d '{"item": "do something else"}'
 
 
 ### DELETE ###
