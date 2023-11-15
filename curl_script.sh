@@ -21,13 +21,13 @@ curl -X POST http://127.0.0.1:8000/goals/ -d '{"item": "do something"}'
 ### PUT ###
 
 # updates chosen goal in database
-curl -X PUT http://127.0.0.1:8000/goals/10/ -d '{"item": "do something else"}'
+curl -X PUT http://127.0.0.1:8000/goals/<goal_id>/ -d '{"item": "do something else"}'
 
 
 ### DELETE ###
 
 # deletes chosen goal from database
-curl -X DELETE http://127.0.0.1:8000/goals/10/ 
+curl -X DELETE http://127.0.0.1:8000/goals/<goal_id>/ 
 
 echo
 echo "JSONBIN.io API requests:"
